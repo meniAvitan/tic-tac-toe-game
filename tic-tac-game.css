@@ -1,0 +1,130 @@
+* {
+    font-family: georgia, arial;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+body {
+    background-image: url("https://st2.depositphotos.com/2066835/8826/v/950/depositphotos_88263406-stock-illustration-hand-drawn-tic-tac-toe.jpg");
+}
+
+
+
+button {
+    padding: 3px;
+    border: 0px;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#restart {
+    display: none;
+    /* margin: 5px auto 0px auto; */
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgb(39, 168, 6);
+    font-weight: bold;
+    height: 30px;
+}
+
+#restart:hover {
+    background-color: white;
+    color:rgb(39, 168, 6);
+}
+
+#winner {
+    margin-top: 0px;
+    font-size: 40px;
+    color: rgb(92, 235, 92);
+    font-weight: bold;
+}
+#draw {
+    margin-top: 10px;
+    font-size: 2em;
+    
+}
+#container{
+    background-color: black;
+    padding-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    border-radius: 15px;
+    text-align: center;
+   
+}
+#title{
+    padding: 20px;
+    font-size: 50px;
+    color: white;
+}
+#title-TAC{
+    color: white;
+}
+
+#player-turn{
+    font-size: 20px;
+    padding-bottom: 15px;
+    
+}
+
+
+#grid {
+    width: 350px;
+    height: 350px;
+    border-spacing: 0px;
+    background-color: black;
+    top: 30px;
+    margin: auto;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    font-family: monospace;
+    font-size: 5em;
+}
+#q0,#q1,#q2,#q3,#q4,#q5{
+    border-bottom: 5px solid white;
+}
+#q2,#q5,#q8,#q1,#q4,#q7{
+    border-left: 5px solid white;
+}
+
+.tile:hover {
+    color: #fff;
+    background-color: rgba(128, 128, 128, 0.527);
+    cursor: pointer;
+}
+
+
+#score_x{
+    float: left;
+    /* background-color:  rgba(128, 128, 128, 0.589); */
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+#vs{
+    font-size: 35px;
+    color: white;
+}
+#score_o{
+  float: right;
+  /* background-color: rgba(128, 128, 128, 0.589); */
+  border-radius: 10px;
+  padding: 10px;
+  margin-right:10px ;
+    
+    
+}
+

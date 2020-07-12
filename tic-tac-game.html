@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic-tac-game.css">
+</head>
+
+<body onload="init()">
+    
+    <div id="container">
+    <h1 id="title">TIC - TAC - TOE</h1>
+   
+    <div id="score_x">X score <br/><br/> WON - 0 : 0 - LOST </div><span id="vs">VS</span>
+    <div id="score_o">O score <br/><br/> WON - 0 : 0 - LOST </div>
+    <br/><br/><br/>
+
+    <p id="player-turn">Player X turn</p>
+    
+    <p id="winner"></p>
+    <p id="draw"></p>
+    <button id="restart" onclick="restart()">Restart</button>
+  
+    <table id="grid">
+        <tr>
+            <td class="tile " id="q0" onclick="update(0)"></td>
+            <td class="tile " id="q1" onclick="update(1)"></td>
+            <td class="tile " id="q2" onclick="update(2)"></td>
+        </tr>
+        
+        <tr>
+            <td class="tile " id="q3" onclick="update(3)"></td>
+            <td class="tile " id="q4" onclick="update(4)"></td>
+            <td class="tile " id="q5" onclick="update(5)"></td>
+        </tr>
+        
+        <tr>
+            <td class="tile " id="q6" onclick="update(6)"></td>
+            <td class="tile " id="q7" onclick="update(7)"></td>
+            <td class="tile " id="q8" onclick="update(8)"></td>
+        </tr>
+    </table>
+    
+</div>
+
+    
+
+    <script src="tic-tac-game.js"></script>
+</body>
+
+</html>
