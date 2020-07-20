@@ -74,11 +74,11 @@ function finish(text) {
 }
 function Update_X_score()
 {
-    document.getElementById("score_x").innerHTML="X score <br/> WON- "+won_x+" : " +lost_x+" -LOST";
+    document.getElementById("score_x").innerHTML= playerX.value+" <br/><br/> WON- "+won_x+" : " +lost_x+" -LOST";
 }
 function Update_O_score()
 {
-    document.getElementById("score_o").innerHTML="O score <br/> WON- "+won_o+" : " +lost_o+" -LOST";
+    document.getElementById("score_o").innerHTML=playerO.value+ "<br/><br/> WON- "+won_o+" : " +lost_o+" -LOST";
 }
 
 // updates the tiles and checks if either players won
@@ -94,7 +94,7 @@ function update(tileIndex) {
             const draw_ = document.getElementById("draw");
             const winner = document.getElementById("winner");
             if (hasWon(getGridArray("X"))) {
-                finish("PLAYER -X- WON!");
+                finish(playerX.value+"  WON!");
                 won_x++;
                 lost_o++;
                 Update_X_score();
@@ -102,7 +102,7 @@ function update(tileIndex) {
 
             }
             else if (hasWon(getGridArray("O"))) {
-                finish("PLAYER -O- WON!");
+                finish(playerO.value+"  WON!");
                 won_o++;
                 lost_x++;
                 Update_X_score();
@@ -120,3 +120,11 @@ function update(tileIndex) {
         }
     }
 }
+document.getElementById("start").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="none";
+    document.getElementById("Xname").innerHTML= "X - " + playerX.value;
+    document.getElementById("Oname").innerHTML="O - " + playerO.value;
+})
+let playerX = document.getElementById("playerX");
+let playerO = document.getElementById("playerO");
+
